@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(210deg, #08FFB8 13.4%, #5799F7 86.6%);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3rem;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    /* object-fit: fill; */
+    flex-direction: column;
+    overflow: hidden;
+    /* line-height: -20rem; */
+}
+
+.title {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    width: 37vw;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    margin: auto;
+    font-weight: bolder;
+    background-color: #FF3C3C;
+    /* text-align: center; */
+    color: white;
+    /* position: relative; */
+    margin-top: 10rem;
+    margin-bottom: 0;
+    font-size: 4vw;
+}
+.nav{
+    margin-bottom: -10rem;
+}
+
+form {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.name {
+    margin: 1rem;
+    width: 30vw;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: larger;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    /* margin-top: 4rem; */
+    margin-bottom: 2rem;
+}
+
+.Phoneno {
+    margin: auto;
+    width: 30vw;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: larger;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #822ADA;
+    color: white;
+    width: 20vw;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: larger;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    margin: auto;
+}
+
+@media (max-width:1000px){
+    .title{
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+        font-size: 6vw;
+        padding: 1.2rem;
+        /* text-align: center; */
+    }
+    .name{
+        width: 80vw;
+    }
+    .Phoneno{
+        width: 80vw;
+    }
+    .btn{
+        width: 90vw;
+        padding: 0.9rem;
+        font-size: 7vw;
+    }
+}
+

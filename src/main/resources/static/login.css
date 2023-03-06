@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%);
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.image{
+    width: 20vw;
+    height: 40vh;
+    background-image: url('login.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.email , .Password {
+    margin: 1rem 0;
+    width: 21vw;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: medium;
+}
+
+form i{
+    margin-left: -33px;
+}
+
+.login{
+    width: 22.6vw;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+    border-radius: 1.3rem;
+    border: none;
+    background-color: #E23190;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
+    color: white;
+}
+
+.login:hover{
+    background-color: white;
+    color: #E23190;
+    border: 1px solid #E23190;
+}
+
+p .username{
+    display: block;
+}
+
+.Passtxt,.Emailtxt{
+    width: 17rem;
+}
+
+.valid{
+    color: #40ff57;
+}
+
+.invalid{
+    color: #ea0101;
+}
+
+.Emailtxt , .Passtxt{
+    font-size: medium;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.forgot a{
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px;
+    color:white;
+    text-decoration: none;
+    font-size: small;
+}
+
+
+@media (max-width:1300px){
+    .image{
+        width: 80vw;
+        margin-bottom: -1rem;
+    }
+
+    .email , .Password {
+        margin: 0.7rem 0;
+        width: 80vw;
+        padding: 1rem;
+    }
+
+    .login{
+        width: 88vw;
+        margin-top: 6rem;
+    }
+
+
+}
+
+
+

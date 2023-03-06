@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-color: gainsboro;
+    overflow: hidden;
+}
+
+.head{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('gps1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container::before{
+    content: '.';
+    background-color: #D9D9D9;
+    display: inline-flex;
+    width: 3vw;
+    position: absolute;
+    left: 49%;
+    top: 3%;
+    border-radius: 0.5rem;
+    height: 1vh;
+}
+
+.container{
+    margin: auto;
+    width: 60vw;
+    height: 100vh;
+    /* background-color: #1400FC; */
+    background-color: white;
+    backdrop-filter: blur(19px) saturate(200%);
+    -webkit-backdrop-filter: blur(20px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.93);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.200);
+    border-radius: 3rem 3rem 0 0 ;
+    margin-top: -40rem;
+    padding-top: 8rem;
+
+    /* background-color: blue; */
+}
+
+
+.h1{
+    padding-left: 3rem;
+    font-family: 'Georama', sans-serif;
+
+}
+
+.cards{
+    margin: auto;
+    /* width: 100vw; */
+    height: 66vh;
+    display: flex;
+    padding-top: 1rem;
+    /* background-color: aqua; */
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.one{
+    display: inline-flex;
+    margin: auto;
+    width: 30vw;
+    height: 20vh;
+    margin-top: 2rem;
+    background-color: #7B5AFF;
+    border-radius: 1.5rem;
+
+}
+
+.device{
+    display: flex;
+    align-items: center;
+    font-size: 8.9vw;
+    font-family: 'Secular One', sans-serif;
+    color: rgba(0, 0, 0, 0.07);
+}
+
+/* .device::after{
+    content: '';
+    width: 2vw;
+    height: 30vh;
+    position: relative;
+    top: -0.8rem;
+    left: 1.7rem;
+    border-radius: 0 20px 20px 0;
+    display: inline-flex;
+    background-color: black;
+} */
+
+.location{
+    display: flex;
+    align-items: center;
+    font-size: 6.3vw;
+    color: rgba(0, 0, 0, 0.07);
+    font-family: 'Secular One', sans-serif;
+
+}
+/* 
+.location::after{
+    content: '';
+    width: 2vw;
+    height: 20.1vh;
+    background-color: black;
+    position: relative;
+    top: -0.99rem;
+    left: 0.1rem;
+    border-radius: 0rem 1rem 1rem 0;
+
+} */
+
+.myloc{
+    position: absolute;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    /* top: -8rem; */
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 3rem;
+}
+
+
+.status{
+    position: absolute;
+    width: 40vw;
+    display: flex;
+    justify-content: first baseline;
+    padding: 4vw;
+    /* top: -8rem; */
+    color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: 'Comfortaa', cursive;
+}
+
+.two{
+    width: 30vw;
+    height: 20vh;
+    margin: auto;
+    margin-top: -5rem;
+    background-color: #FF4A75;
+    border-radius: 1.5rem;
+}
+
+
+
+nav{
+    width: 29vw;
+    height: 10vh;
+    /* background-color: #fff; */
+    margin: auto;
+    margin-top: -5rem;
+    /* margin-top: 6vw; */
+    background: rgba(235, 179, 255, 0.66);
+    border-radius: 1rem;
+    /* z-index: 10; */
+
+}
+
+.webhead{
+    background: rgba(235, 179, 255, 0.66);
+    /* z-index: 1; */
+
+}
+
+nav ul{
+    font-family: 'Georama', sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height:10vh;
+    font-size: 0.9vw;
+    
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+li{
+    place-content: center;
+    place-items: center;
+    display: grid;
+    grid-template-rows: auto;
+    margin: 0.5rem 1.8rem;
+    color: black;
+    
+
+}
+
+.gpi{
+    color: #1400FC;
+}
+
+.bar{
+    display: none;
+}
+
+
+@media (max-width:900px) {
+    .container{
+        width: 100vw;
+        height: 80vh;
+        padding-top: 4rem;
+        margin-top: -3rem;
+
+    }
+    .head{
+        /* height: 0vh; */
+        height:22vh;
+        background-image: url('gps2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .container::before{
+        width: 15vw;
+        margin-left: -1rem;
+        margin-top: -1rem;
+    }
+    
+    .h1{
+        margin-left: -1rem;
+    }
+    .one{
+        width: 90vw;
+        height: 20vh;
+
+        
+    }
+    .webhead{
+        display: none;
+    }
+    
+
+    .device{
+        font-size: 27vw;
+        display: flex;
+        height: 25vh;
+        align-items: center;
+    }
+    .status{
+        padding-left: 3rem;
+        padding-bottom: 3rem;
+        /* height: 100vh; */
+        width: 80vw;
+        display: flex;
+        /* position:absolute; */
+        align-items: center;
+        justify-content: baseline;
+        color: rgb(255, 255, 255);
+        font-size: 3.8vw;
+        
+    }
+    .two{
+        margin-top: -7rem;
+        width:90vw;
+        height: 20vh;
+    }
+    .location{
+        font-size: 19vw;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+    }
+    .myloc{
+        width: 90vw;
+        font-size: 10vw;
+    }
+    .bar{
+        display:flex;
+        align-items: center;
+        /* position:absolute; */
+        
+        /* margin-left: 1rem; */
+        width: 95vw;
+        
+
+    }
+    .navbar{
+        font-size: 3vw;
+        margin: auto;
+        font-weight: 900;
+    }
+    
+    .li{
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+        width: 5.1vw;
+        justify-content: space-evenly;
+        /* margin: 0.4rem 1.5rem; */
+    }
+
+    
+}
+
+
+@media (max-height:720px) {
+    .bar{
+        /* margin-top: 2px; */
+    }
+
+}
+
+
+
+/* nav */
+

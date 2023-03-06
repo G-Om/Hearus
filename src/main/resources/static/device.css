@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-color: gainsboro;
+    overflow: hidden;
+}
+
+.bar{
+    display: none;
+}
+
+.head{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('device.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+
+.container::before{
+    content: '.';
+    background-color: rgb(91, 91, 91);
+    display: inline-flex;
+    width: 3vw;
+    position: absolute;
+    left: 49%;
+    top: 3%;
+    border-radius: 0.5rem;
+    height: 1vh;
+}
+
+.container{
+    margin: auto;
+    width: 60vw;
+    height: 100vh;
+    /* background-color: #1400FC; */
+    background-color: #F4F1FF;
+    border-radius: 3rem 3rem 0 0 ;
+    margin-top: -40rem;
+    padding-top: 8rem;
+    backdrop-filter: blur(1px) saturate(200%);
+    -webkit-backdrop-filter: blur(1px) saturate(200%);
+    background-color: rgba(244, 241, 255, 0.95);
+    /* border-radius: 12px; */
+    border: 1px solid rgba(255, 255, 255, 0.200);
+
+    /* background-color: blue; */
+}
+
+h1{
+    font-family: 'Georama', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5vw;
+}
+
+
+
+nav{
+    width: 29vw;
+    height: 10vh;
+    /* background-color: #fff; */
+    margin: auto;
+    margin-top: -5rem;
+    /* margin-top: 6vw; */
+    background: rgba(235, 179, 255, 0.66);
+    border-radius: 1rem;
+    /* z-index: 10; */
+
+}
+
+
+.webhead{
+    background: rgba(235, 179, 255, 0.66);
+    /* z-index: 1; */
+
+}
+
+
+nav ul{
+    font-family: 'Georama', sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-size: 0.9vw;
+    
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+li{
+    place-content: center;
+    place-items: center;
+    display: grid;
+    grid-template-rows: auto;
+    margin: 0.5rem 1.8rem;
+    color: black;
+    
+
+}
+
+.moni{
+    color: #1400FC;
+}
+
+
+.cards{
+    display: flex;
+    /* width: 100vw; */
+    justify-content: center;
+    /* background-color: #fff; */
+    
+}
+
+.one{
+    border-radius: 1rem;
+    margin-top: 2rem;
+    width: 30vw;
+    height: 18vh;
+    display: flex;
+    color: rgba(0, 0, 0, 0.10);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #A46CFF;
+    font-family: 'Secular One', sans-serif;
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+
+
+.utilities{
+    margin-top: 2vw;
+    display: flex;
+    /* margin: auto; */
+    font-family: 'Secular One', sans-serif;
+    justify-content: space-around;
+    /* background-color: wheat; */
+}
+
+.two{
+    width: 20vw;
+    height: 15vh;
+    background-color: #81FFB3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    font-size: 1.5vw;
+}
+
+
+
+.img1{
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    text-align: center;
+    background-image: url('loc.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+}
+
+
+
+
+.three{
+    width: 20vw;
+    height: 15vh;
+    border-radius: 1rem;
+    background-color: #EFFF37;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+}
+.img2{
+    width: 7vw;
+    height: 10vh;
+    position: absolute;
+    text-align: center;
+    background-image: url('sound.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+}
+
+
+@media (max-width:900px) {
+    .container{
+        width: 100vw;
+        height: 100vh;
+        padding-top: 4rem;
+        margin-top: -3rem;
+
+    }
+    .head{
+        height:26vh;
+        background-image: url('deafness-1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .container::before{
+        background-color: #5E5E5E;
+        width: 15vw;
+        margin-left: -1.3rem;
+        margin-top: 0.1rem;
+    }
+
+    .webhead{
+        display: none;
+    }
+
+    .h1{
+        font-size: 8vw;
+    }
+
+    .one{
+        width: 90vw;
+        font-size: 15vw;
+        color: rgba(0, 0, 0, 0.30);
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    .two{
+        width: 45vw;
+        height: 17vh;
+        font-size: 6vw;
+    }
+    .three{
+        width: 45vw;
+        height: 17vh;
+        font-size: 6vw;
+    }
+    .img1{
+        width: 45vw;
+        height: 12vh;
+        background-size: contain;
+        opacity: 0.1;
+    }
+
+    .img2{
+        width: 40vw;
+        height: 17vh;
+        opacity: 0.1;
+        background-size: contain;
+    }
+
+    .bar{
+        margin-top: 4rem;
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar{
+        font-size: 3vw;
+        margin: auto;
+        font-weight: 900;
+    }
+
+    .li{
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+        width: 5.1vw;
+        justify-content: space-evenly;
+        /* margin: 0.4rem 1.5rem; */
+    }
+    
+
+
+}
+
+

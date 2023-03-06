@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" th:href="@{/alert.css}" />
+		<!-- icons -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+	</head>
+	<body>
+		<div class="container">
+      <a th:href="@{/home.html}" class="back"><span class="material-symbols-outlined">
+        keyboard_backspace
+        </span>Back
+    </a>
+			<figure class="clock">
+				<div class="mins">0</div>
+				<div>:</div>
+				<div class="secs">00</div>
+				<audio
+					th:src="@{/lertsound.mp3}" autoplay
+				></audio>
+				<svg class="progress-ring" height="180" width="180">
+					<circle
+						class="progress-ring__circle"
+						stroke-width="8"
+						fill="transparent"
+						r="60"
+						cx="90"
+						cy="90"
+					/>
+				</svg>
+			</figure>
+
+			<div class="btn-group">
+				<a th:href = "@{/hearus/help/{id}(id = ${user.id})}">
+				<button id = "reset" class="reset">
+					<span class="material-symbols-outlined res"> close </span>
+				</button>
+				</a>
+			</div>
+		</div>
+
+		<script th:src="@{/settings.js}"></script>
+		<script th:src="@{/timer.js}"></script>
+		<script th:src="@{/progress.js}"></script>
+	</body>
+</html>

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('gov.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position:20rem -5rem; */
+    overflow: hidden;
+}
+
+.head{
+    display: inline-flex;
+    margin: auto;
+}
+
+.container{
+    /* display: flex; */
+    margin: auto;
+    background-color: white;
+    width: 40vw;
+    height: 100vh;
+    margin-top: 10rem;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    border-radius: 1rem;
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.90);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.head{
+    display: flex;
+    margin: auto;
+    padding: 2rem;
+}
+
+.title{
+    display: flex;
+    margin: auto;
+    width: 20vw;
+    /* height: 5vh; */
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    background-color: #54FF8E;
+    font-family: 'Inter', sans-serif;
+    color: rgba(0, 0, 0, 0.16);
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.back{
+    display: flex;
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.contents{
+    display: flex;
+    width: 40vw;
+    text-align: center;
+    flex-direction: column;
+}
+
+.links{
+    font-size: 1.2vw;
+    line-height: 5rem;
+    text-decoration: none;
+    color: red;
+    font-family: 'Inter', sans-serif;
+}
+
+.links:hover{
+    color: blueviolet;
+}
+
+@media (max-width:1200px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        margin-top: 1rem;
+        
+
+    }
+    .body{
+        background-image: none;
+    }
+    .head{
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .title{
+        display: flex;
+        font-size: 10vw;
+        width: 90vw;
+        margin: auto;
+        margin-top: -8rem;
+        
+    }
+    .back{
+        display: inline-flex;
+        font-size: 5vw;
+    }
+
+    .contents{
+        font-size: 5vw;
+        width: 95vw;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+    .links{
+        font-size: 5vw;
+        line-height: 3rem;
+        color: red;
+    }
+    
+}
+
+
+
+

@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('voice3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.container{
+    display: flex;
+    width: 40vw;
+    height: 90vh;
+    /* background-color: antiquewhite; */
+    backdrop-filter: blur(9px) saturate(200%);
+    -webkit-backdrop-filter: blur(9px) saturate(200%);
+    background-color: rgba(252, 167, 191, 0.781);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    margin: auto;
+    margin-top: 10rem;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
+.header{
+    display: inline-flex;
+    height: 10vh;
+    padding: 2rem;
+}
+
+.back{
+    display: inline-flex;
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    /* margin-right: 1rem; */
+}
+
+.h1{
+    display: flex;
+    width: 30vw;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -1rem;
+    font-family: 'Raleway', sans-serif;
+    color:white;
+    font-size: 4rem;
+}
+
+.btn{
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 3rem;
+    background-image: url('mic.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.micca{
+    /* margin: auto; */
+    width: 40vw;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.text{
+    width: 30vw;
+    height: 30vh;
+    margin: auto;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+@media (max-width:1200px){
+    .body{
+        background-image: none;
+        overflow: hidden;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        margin-top: 0;
+        border-radius: 0;
+        background-color: rgba(122, 90, 250, 0.781);
+    }
+
+    .header{
+        padding: 1rem;
+    }
+
+    .back{
+        display: inline-flex;
+        font-size: 5vw;
+        
+    }
+
+    .h1{
+        position: relative;
+        left: -2rem;
+        top: 2rem;
+        display: flex;
+        margin: auto;
+        font-size: 15vw;
+    }
+
+    .micca{
+        width: 100vw;
+        margin-top: 2rem;
+    }
+
+    .text{
+        width: 80vw;
+        height: 45vh;
+        font-size: 5vw;
+
+    }
+
+}

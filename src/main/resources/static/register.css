@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(210deg, #08FFB8 13.4%, #5799F7 86.6%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+    
+form{
+    
+    display: inline-flex;
+    flex-direction: column;  
+    justify-content: center;  
+}
+
+.name,.email,.password,.con-password{
+    margin: 1rem;
+    width: 25vw;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: larger;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.image{
+    width: 20vw;
+    height: 16vh;
+    background-image: url("register.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 3rem;
+}
+
+.register{
+    width: 27vw;
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    background-color: #822ADA;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.register:hover{
+    color: #822ADA;
+    background-color: white;
+    border: 2px solid #822ADA;
+
+}
+
+.valid{
+    color:rgb(208, 255, 0);
+    margin-left: 2rem;
+    font-size: larger;
+    width: 20rem;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.invalid{
+    color: rgb(255, 0, 0);
+    margin-left: 2rem;
+    font-size: larger;
+    width: 20rem;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+form i{
+    margin-left: -50px;
+    cursor: pointer;
+}
+
+.container .email{
+    display: block;
+    
+}
+
+
+
+@media (max-width:1300px){
+    .image{
+        width: 90vw;
+        margin-bottom: 20vw;
+    }
+    .name,.email,.password,.con-password{
+        width: 80vw;
+        margin: 0.5rem;
+        font-size: medium;
+    }
+
+    .register{
+        width: 90vw;
+        font-size: 1.5rem;
+    }
+
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contact Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/emergency.css}">
+</head>
+<body>
+    <div class="container">
+    <div class="nav">
+        <h1 class="title">Emergency Contact</h1></div>
+    
+    <form th:action="@{/hearus/Emergency/post}" th:object="${userRel}" method="POST" id="form">
+        <p>
+            <input 
+                type="text"
+                class="name"
+                th:field="*{relativeName}"
+                id="name-el"
+                placeholder="Name(Family Member)"                
+            />
+        </p>
+
+        <p class="phoneno">
+            <input 
+                type="text"
+                class="Phoneno"
+                th:field="*{relativeNo}"
+                id="ph-el" 
+                placeholder="Phone Number"
+            />
+        </p>
+        <input type="submit" value="Register" class="btn" />
+    </form>
+
+        </a>
+    
+
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Emergency Service</title>
+</head>
+<body>
+    <a th:href="@{/hearus/help/{id}(id = ${user.id})}" id="cancel">
+      <h1> Press </h1>
+    </a>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCTGJL6NbUgP44vXjz-zp53kEnADVdVaOY"></script>
+
+<script th:src = "@{/emergency.js}"></script>
+</body>
+</html>

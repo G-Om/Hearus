@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: white;
+    background-image: url('maps.webp');
+}
+
+.head{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    object-fit: fill;
+    /* margin: auto; */
+}
+
+.title {
+    text-align: center;
+    /* font-weight: bold; */
+    /* font-style: normal; */
+    font-family: 'Georama', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    color: rgb(58, 58, 58);
+}
+
+
+
+
+
+.back{
+    display: inline-flex;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-size: 1.2vw;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: black;
+    width: 3rem;
+}
+
+
+
+.container{
+    width: 50vw;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    margin-top: -30rem;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    border: none;
+    border-radius:  3rem 3rem 0 0 ;
+    background-color: white;
+    /* margin-top: -1.5rem; */
+    backdrop-filter: blur(3px) saturate(200%);
+    -webkit-backdrop-filter: blur(6px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.76);
+    /* border-radius: 12px; */
+    border: 1px solid rgba(255, 255, 255, 0.200);
+
+}
+
+#map{
+    display: flex;
+    margin: auto;
+    width: 36vw;
+    height: 20vw;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+
+.container::before{
+    content: '.';
+    background-color: rgb(106, 106, 106);
+    display: inline-flex;
+    width: 3rem;
+    position: absolute;
+    left: 48%;
+    /* top: 29%; */
+    border-radius: 0.5rem;
+    height: 1vh;
+}
+
+
+
+@media (max-width:1200px){
+    .body{
+        
+    }
+
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+        margin-top: -33rem;
+    }
+
+    .container::before{
+        display: flex;
+        margin: auto;
+        width: 10vw;
+        margin-top: -0.5rem;
+        margin-left: -0.6rem;
+        z-index: 111;
+    }
+    .back{
+        font-size: 5vw;
+        margin-left: 1rem;
+        z-index: 1000;
+    }
+    .title{
+        margin-top: -2rem;
+        font-size: 10vw;
+    }
+
+    #map{
+        margin-top: 3rem;
+        width: 90vw;
+        height: 50vh;
+    }
+
+    
+}

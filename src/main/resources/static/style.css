@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('Mesh gradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Federo', sans-serif;
+    font-size: strong;
+    color: white;
+}
+
+p {
+    text-align: center;
+    font-family: 'Federo', sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+.Ear-image {
+    width: 20rem;
+}
+
+.btn {
+    margin: 2rem 0;
+    background-color: #E23190;
+    color: white;
+    width: 318px;
+    height: 61px;
+    top: 650px;
+    left: 23px;
+    border-radius: 43px;
+    font-size: 1.7rem;
+    font-family: 'Federo', sans-serif;
+    font-style: normal;
+    border: none;
+    border-radius: 2rem;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #E23190;
+    border:  2px solid #ff0088;
+}
+
+.Main-Title {
+    font-size: 3vw;
+    line-height: 5rem;
+}
+
+.Paragraph {
+    font-size: 1.2vw;
+}
+
+@media (max-width:1300px) {
+    .Main-Title {
+        font-size: 1.7rem;
+        color: white;
+        letter-spacing: 0.1rem;
+    }
+    .btn{
+        margin-top: 5vw;
+    }
+    .Ear-image{
+        width: 15rem;
+    }
+}
+
+@media (max-width:1300px) {
+    .Paragraph {
+        font-size: 1.3rem;
+        color: white;
+    }
+    
+}

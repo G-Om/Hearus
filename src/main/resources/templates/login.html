@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login Page</title>
+		<link rel="stylesheet" th:href="@{/login.css}" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+		/>
+
+		<!-- fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<span class="image"></span>
+			<div class="form">
+				<form th:action="@{/hearus/login/post}" th:object = "${user}" method="POST">
+					<div class="con">
+						<p>
+							<input
+								type="text"
+								class="email"
+								th:field = "*{email}"
+								id="email-el"
+								th:placeholder="Email"
+							/>
+						</p>
+					</div>
+
+					<span class="Emailtxt" id="em-el"></span>
+
+					<p>
+						<input
+							type="password"
+							class="Password"
+							th:field = "*{password}"
+							id="pass-el"
+							placeholder="Password"
+						/>
+						<i class="bi bi-eye-slash" id="togglePassword"></i>
+					</p>
+
+					<span class="forgot">
+						<a href="#" target="_blank" rel="noopener noreferrer"
+							>Forgot Password?</a
+						>
+					</span>
+
+					<span class="Passtxt" id="pas-el"></span>
+
+				
+						<input type="submit" class="login" value="Login" />
+
+				</form>
+			</div>
+		</div>
+
+		<script th:src = "@{login.js}"></script>
+	</body>
+</html>
