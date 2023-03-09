@@ -10,16 +10,16 @@ A social project to Detect and alert for falls in the Disabled Persons also incl
 <h4>First Page</h4>
 <img src="https://github.com/G-Om/ImagesAll/blob/main/Hearus/Screenshot%202023-03-09%20162903.png">
 <h4>Login Register Navigator</h4>
-<img src="https://drive.google.com/file/d/197COr6davXsFoPJ8BthsRd-urGU460C1/view?usp=share_link">
+<img src="https://github.com/G-Om/ImagesAll/blob/main/Hearus/2.png">
 <h4>Login Page<h4>
-<img src="https://drive.google.com/file/d/1jDQjlalWukrLeOdggJPFFYKtok2bG52W/view?usp=share_link">
+<img src="https://github.com/G-Om/ImagesAll/blob/main/Hearus/3.png">
 <h4>Home Page<h4>
-<img src="https://drive.google.com/file/d/13nJz1_F72cPMFJ6kSS2NSZWP6TSuBXtD/view?usp=share_link">
+<img src="https://github.com/G-Om/ImagesAll/blob/main/Hearus/4.png">
 <h4>Status</h4>
-<img src="https://drive.google.com/file/d/1fQVI9Ej6py86z9EfF6-Za0ajHOCrw4G_/view?usp=share_link">
+<img src="https://github.com/G-Om/ImagesAll/blob/main/Hearus/5.png">
 <h4>Functionalities<h4>
-<img src="https://drive.google.com/file/d/1fQVI9Ej6py86z9EfF6-Za0ajHOCrw4G_/view?usp=share_link">
+<img src="https://github.com/G-Om/ImagesAll/blob/main/Hearus/6.png">
 <h4>Maps Page</h4>
-<img src="https://drive.google.com/file/d/1TFjUJjbswSLeDxkLSJup-U3EHogdd2cq/view?usp=share_link">
+<img src="https://github.com/G-Om/ImagesAll/blob/main/Hearus/7.png">
 <h4>Transcribe</h4>
-<img src="https://drive.google.com/file/d/1astXTlXtXedDSl4ir-6ftks207mbITb9/view?usp=share_link">
+<img src="https://github.com/G-Om/ImagesAll/blob/main/Hearus/8.png">
