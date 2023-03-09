@@ -8,7 +8,7 @@ A social project to Detect and alert for falls in the Disabled Persons also incl
 -The Solution 
 </p>
 <h4>First Page</h4>
-<img src="https://drive.google.com/file/d/1yiVSW15AFc3-UeE-8Qwxa7M0JqUXjZXb/view?usp=share_link">
+<img src="https://drive.google.com/file/d/1yiVSW15AFc3-UeE-8Qwxa7M0JqUXjZXb/view?usp=share_link.png">
 <h4>Login Register Navigator</h4>
 <img src="https://drive.google.com/file/d/197COr6davXsFoPJ8BthsRd-urGU460C1/view?usp=share_link">
 <h4>Login Page<h4>
